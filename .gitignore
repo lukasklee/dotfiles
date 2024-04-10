@@ -1,5 +1,8 @@
 *
 !.gitignore
 
-.bashrc
+!README.md
+
+!.bashrc
+!.zshrc
 
