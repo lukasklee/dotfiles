@@ -3,6 +3,9 @@
 
 !README.md
 
+!.config/
+!.config/starship.toml
+
 !.bashrc
 !.zshrc
 
