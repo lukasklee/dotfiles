@@ -1,10 +1,15 @@
 *
 !.gitignore
-
 !README.md
 
 !.config/
 !.config/starship.toml
+
+!.config/kitty/
+!.config/kitty/kitty.conf
+!.config/kitty/themes/
+!.config/kitty/themes/catppuccin/
+!.config/kitty/themes/catppuccin/mocha.conf
 
 !.bashrc
 !.zshrc
