@@ -11,6 +11,9 @@
 !.config/kitty/themes/catppuccin/
 !.config/kitty/themes/catppuccin/mocha.conf
 
+!.config/nvim/
+!.config/nvim/init.lua
+
 !.bashrc
 !.zshrc
 
