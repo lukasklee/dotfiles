@@ -1,0 +1,13 @@
+working_directory = "/Users/macpc05/Repositories"
+
+[window]
+padding.x = 10
+padding.y = 10
+decorations = "Buttonless"
+
+[font]
+size = 14.0
+normal = { family = "Hack Nerd Font" }
+
+[colors]
+primary.background = "#1e1e2e" # Catppuccin mocha

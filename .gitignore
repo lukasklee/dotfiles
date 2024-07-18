@@ -1,19 +1,5 @@
-*
-!.gitignore
-!README.md
+# OS generated files
+.DS_Store
 
-!.config/
-!.config/starship.toml
-
-!.config/kitty/
-!.config/kitty/kitty.conf
-!.config/kitty/themes/
-!.config/kitty/themes/catppuccin/
-!.config/kitty/themes/catppuccin/mocha.conf
-
-!.config/nvim/
-!.config/nvim/init.lua
-
-!.bashrc
-!.zshrc
-
+# Private files
+.aliases-private.zsh
