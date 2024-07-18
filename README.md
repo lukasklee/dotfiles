@@ -1,12 +1,14 @@
 # dotfiles
 
-## Setup
+Personal dotfiles setup, currently for macOS only.
 
-Run `sh setup.sh
+## Setup (automatically)
 
-### MongoDB
+Run `sh setup.sh`
 
-- https://www.mongodb.com/docs/manual/tutorial/install-mongodb-on-os-x/#run-mongodb-community-edition
+## Setup (manually)
+
+- Run `mongod --config /opt/homebrew/etc/mongod.conf --fork` to run mongod manually as a background process using a config file. (For macOS running on Apple Silicon processors, see [Run MongoDB Community Edition](https://www.mongodb.com/docs/manual/tutorial/install-mongodb-on-os-x/#run-mongodb-community-edition))
 
 ## Useful Links
 
