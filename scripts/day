@@ -1,5 +1,10 @@
 #!/bin/bash
 
+##
+# Thanks for the idea, the template and a lot of inspiration goes out
+# to Mischa van den Burg (https://github.com/mischavandenburg).
+#
+
 today=$(date +"%Y-%m-%d")
 file="$HOME/Documents/LukasNotes/periodic-notes/daily-notes/$today.md"
 
