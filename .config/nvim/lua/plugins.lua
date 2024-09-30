@@ -4,8 +4,11 @@ require("lazy").setup({
     name = "catppuccin",
     priority = 1000,
   },
-  "nvim-tree/nvim-tree.lua",
-  "nvim-tree/nvim-web-devicons",
+  {
+    "olivercederborg/poimandres.nvim",
+    lazy = false,
+    priority = 1000,
+  },
   "nvim-lualine/lualine.nvim",
   {
     "nvim-telescope/telescope.nvim",
@@ -15,8 +18,10 @@ require("lazy").setup({
   "nvim-telescope/telescope-ui-select.nvim",
   { "nvim-treesitter/nvim-treesitter", build = ":TSUpdate" },
 
+  -- Code formatting
   "nvimtools/none-ls.nvim",
   "MunifTanjim/prettier.nvim",
+  "m4xshen/autoclose.nvim",
 
   -- Completion
   "hrsh7th/nvim-cmp",

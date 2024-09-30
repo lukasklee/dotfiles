@@ -38,3 +38,8 @@ null_ls.setup({
 })
 
 --vim.keymap.set("n", "<leader>gf", vim.lsp.buf.format, {})
+
+--
+-- autoclose.nvim
+--
+require("autoclose").setup()

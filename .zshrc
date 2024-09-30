@@ -7,7 +7,9 @@ export CLICOLOR=1
 # Aliases
 #
 source $DOTFILES/.aliases.zsh
-source $DOTFILES/.aliases-private.zsh
+if [ -f $DOTFILES/.aliases-private.zsh ]; then
+  source $DOTFILES/.aliases-private.zsh
+fi
 
 ##
 # Paths
@@ -29,3 +31,11 @@ antigen apply
 # https://starship.rs/
 #
 eval "$(starship init zsh)"
+
+# Function to reset cursor to vertical bar
+function reset_cursor() {
+  echo -ne "\e[5 q"
+}
+
+# Alias nvim to automatically reset the cursor after exit
+alias nvim="nvim; reset_cursor"

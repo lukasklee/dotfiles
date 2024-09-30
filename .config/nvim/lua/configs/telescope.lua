@@ -1,21 +1,22 @@
-require('telescope').setup({
+require("telescope").setup({
   defaults = {
     file_ignore_patterns = {
       ".git/.*",
-      "node%_modules/.*"
-    }
+      ".obsidian/.*",
+      "node%_modules/.*",
+    },
   },
   pickers = {
     find_files = {
       -- Show files like .gitignore
-      hidden = true
-    }
+      hidden = true,
+    },
   },
   extensions = {
     ["ui-select"] = {
-      require("telescope.themes").get_dropdown {
+      require("telescope.themes").get_dropdown({
         -- even more opts
-      }
+      }),
 
       -- pseudo code / specification for writing custom displays, like the one
       -- for "codeactions"
@@ -30,16 +31,16 @@ require('telescope').setup({
       --      do the following
       --   codeactions = false,
       -- }
-    }
-  }
+    },
+  },
 })
 
 -- To get ui-select loaded and working with telescope, you need to call
 -- load_extension, somewhere after setup function:
 require("telescope").load_extension("ui-select")
 
-local builtin = require('telescope.builtin')
+local builtin = require("telescope.builtin")
 
-vim.keymap.set('n', '<D-p>', builtin.find_files, {})
-vim.keymap.set('n', '<leader>fg', builtin.live_grep, {})
-vim.keymap.set('n', '<leader>fb', builtin.buffers, {})
+vim.keymap.set("n", "<D-p>", builtin.find_files, {})
+vim.keymap.set("n", "<leader>fg", builtin.live_grep, {})
+vim.keymap.set("n", "<leader>fb", builtin.buffers, {})

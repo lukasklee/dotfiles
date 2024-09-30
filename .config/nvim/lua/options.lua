@@ -15,5 +15,10 @@ vim.opt.expandtab = true
 vim.wo.number = true
 
 -- Enable true color support
-vim.cmd [[ set termguicolors ]]
+vim.cmd([[ set termguicolors ]])
 
+vim.opt.encoding = "utf-8"
+vim.opt.fileencoding = "utf-8"
+vim.opt.fileformats = "unix,dos,mac"
+vim.opt.scrolloff = 8     -- Makes sure there are always eight lines of context
+vim.opt.sidescrolloff = 8 -- Makes sure there are always eight lines of context

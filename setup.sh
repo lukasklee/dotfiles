@@ -1,7 +1,5 @@
 #!/bin/sh
 
-echo "Setting up your Mac..."
-
 xcode-select --install
 
 # Check for Homebrew and install if we don't have it
@@ -25,8 +23,7 @@ ln -sf $HOME/.dotfiles/.config/alacritty/alacritty.toml $HOME/.config/alacritty/
 rm -rf $HOME/.config/nvim
 ln -sf $HOME/.dotfiles/.config/nvim $HOME/.config/nvim
 
-mkdir -p $HOME/.config/spotify-player
-ln -sf $HOME/.dotfiles/.config/spotify-player/app.toml $HOME/.config/spotify-player/app.toml
+ln -sf $HOME/.dotfiles/.config/starship.toml $HOME/.config/starship.toml
 
 # Update Homebrew recipes
 brew update
@@ -40,3 +37,8 @@ mkcert -install
 
 # Install antigen, plugin manager for zsh
 curl -L git.io/antigen > ~/antigen.zsh
+
+# Themes for Alacritty
+mkdir -p $HOME/.dotfiles/.config/alacritty/themes
+git clone git@github.com:catppuccin/alacritty.git $HOME/.dotfiles/.config/alacritty/themes/catppuccin 2> /dev/null || git -C $HOME/.dotfiles/.config/alacritty/themes/catppuccin pull
+git clone git@github.com:z0al/poimandres-alacritty.git $HOME/.dotfiles/.config/alacritty/themes/poimandres 2> /dev/null || git -C $HOME/.dotfiles/.config/alacritty/themes/poimandres pull
